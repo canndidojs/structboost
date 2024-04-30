@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StructBoost</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -41,7 +42,7 @@
 
     <section class="s-hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h1>Front-end descomplicado e direto ao ponto!</h1>
                 <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com
                     projetos altamente renomados.</p>
@@ -51,16 +52,17 @@
                 <img src="img/arrow-direction-button.svg" class="arrow" alt="">
             </div>
         </div>
-        <img src="img/ilustra-hero.svg" class="ilustra" alt="Ilustração">
-        <img src="img/ilustra-mobile.svg" class="ilustra-mobile" alt="Ilustração p/ mobile">
+        <img src="img/ilustra-hero.svg" class="ilustra" alt="Ilustração" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/ilustra-mobile.svg" class="ilustra-mobile" alt="Ilustração p/ mobile" data-aos="fade-up"
+            data-aos-delay="200">
     </section>
 
     <section class="s-digital">
         <div class="container">
-            <h3>Transformando Ideias em Realidade Digital!
+            <h3 data-aos="fade-right">Transformando Ideias em Realidade Digital!
             </h3>
             <ul>
-                <li>
+                <li data-aos="fade-right">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="img/icon-impacto.svg" alt="Icon Impacto">
@@ -74,7 +76,7 @@
 
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="img/icon-nave.svg" alt="Icon Impacto">
@@ -88,7 +90,7 @@
 
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-left">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="img/icon-performace.svg" alt="Icon Impacto">
@@ -109,18 +111,18 @@
     <section class="s-art-front">
         <div class="container">
             <div class="tittle-text">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <h3>Domine a Arte da Front-end</h3>
                     <p>Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de
                         front-end.</p>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left">
                     <p>Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um
                         desenvolvedor web altamente qualificado.</p>
                 </div>
             </div>
             <div class="all">
-                <div class="card-post">
+                <div class="card-post" data-aos="zoom-in">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="img/img-post.svg" alt="Icon post">
@@ -132,7 +134,7 @@
                             mecanismos de busca.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="zoom-in">
                     <span class="tag">Estilizando</span>
                     <div class="image">
                         <img src="img/img-post.svg" alt="Icon post">
@@ -143,7 +145,7 @@
                             designs atrativos.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="zoom-in">
                     <span class="tag">Potencializando</span>
                     <div class="image">
                         <img src="img/img-post.svg" alt="Icon post">
@@ -154,7 +156,7 @@
                             proporcionando uma experiência única.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="zoom-in">
                     <span class="tag">Aplicações</span>
                     <div class="image">
                         <img src="img/img-post.svg" alt="Icon post">
@@ -165,7 +167,7 @@
                             aplicações web completas e eficientes.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="zoom-in">
                     <span class="tag">Designs</span>
                     <div class="image">
                         <img src="img/img-post.svg" alt="Icon post">
@@ -181,7 +183,7 @@
     </section>
 
     <section class="s-newsletter">
-        <div class="container">
+        <div class="container" data-aos="zoom-out">
             <h2>Front-end descomplicado e direto ao ponto!</h2>
             <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos
                 altamente renomados.</p>
@@ -236,6 +238,15 @@
             <p class="copy">2023 © Todos os direitos reservados. <strong>Codeboost com Fabricio Candido</strong></p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        });
+    </script>
 </body>
 
 </html>

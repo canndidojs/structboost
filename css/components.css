@@ -33,8 +33,8 @@
 }
 
 .item-digital {
-    flex-grow: 1;
     max-width: 38.4rem;
+    width: 100%;
 }
 
 .item-digital .icon {
@@ -95,4 +95,37 @@
 .card-post .text p {
     font-size: 1.6rem;
     color: var(--gray600);
+}
+
+
+@media(max-width: 991px) {
+    .item-digital {
+        text-align: center;
+    }
+    .item-digital .icon {
+        margin: 0 auto;
+        margin-bottom: 1.6rem;
+    }
+    .item-digital .info p br{
+        display: none;
+    }
+}
+
+@media(max-width: 560px){
+    .item-digital .info p {
+        max-width: 31.9rem;
+        font-size: 1.8rem;
+    }
+    .card-post{
+        padding: 1.6rem;
+    }
+    .card-post .text h6 {
+        font-size: 1.8rem;
+    }
+    .card-post .text p {
+        font-size: 1.4rem;
+    }
+    .btn-primary.white {
+        height: 6.4rem;
+    }
 }

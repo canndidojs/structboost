@@ -161,8 +161,6 @@ header nav ul a:hover {
 
 .s-art-front {
     padding: 12.8rem 0;
-
-    display: none;
 }
 
 .s-art-front .tittle-text {
@@ -219,8 +217,6 @@ header nav ul a:hover {
 .s-newsletter {
     padding: 8.9rem 0;
     background-color: var(--pink10);
-
-    display: none;
 }
 
 .s-newsletter .container {
@@ -230,7 +226,7 @@ header nav ul a:hover {
 
 .s-newsletter h2 {
     max-width: 64.6rem;
-    width: 100% ;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 1.6rem;
     letter-spacing: -1.44px;
@@ -254,8 +250,6 @@ header nav ul a:hover {
 
 footer {
     padding: 4.8rem 0;
-
-    display: none;
 }
 
 footer .main-area {
@@ -286,7 +280,7 @@ footer .main-area .right {
     justify-content: space-between;
 }
 
-footer .main-area .right .item-nav h6{
+footer .main-area .right .item-nav h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: -.48px;
@@ -294,7 +288,7 @@ footer .main-area .right .item-nav h6{
     margin-bottom: 3.2rem;
 }
 
-footer .main-area .right .item-nav ul li:not(:last-child){
+footer .main-area .right .item-nav ul li:not(:last-child) {
     margin-bottom: 3.2rem;
 }
 
@@ -308,7 +302,7 @@ footer .main-area .right .item-nav ul li a {
     align-items: center;
 }
 
-footer .main-area .right .item-nav ul li a:hover{
+footer .main-area .right .item-nav ul li a:hover {
     color: var(--pink10);
 }
 
@@ -330,20 +324,112 @@ footer .copy strong {
 =============================================*/
 /* Monitor pequeno */
 @media(max-width: 1200px) {
+    .s-digital ul {
+        gap: 3.2rem;
+        padding-bottom: 6.8rem;
+    }
 
+    .item-digital .info p {
+        font-size: 1.6rem;
+    }
+
+    .item-digital .info h6 {
+        font-size: 2rem;
+    }
+
+    .s-digital {
+        padding-top: 6.8rem;
+    }
+
+    .s-art-front .all {
+        gap: 1.6rem;
+    }
+
+    .s-art-front .all .card-post:first-child,
+    .s-art-front .all .card-post:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .s-art-front {
+        padding: 6.8rem 0;
+    }
+
+    footer .main-area .right {
+        max-width: 66.2rem;
+    }
 }
 
 /* Tablet */
 @media(max-width: 991px) {
-    .s-hero::after{
+    .s-hero::after {
         height: 13rem;
-    } 
+    }
+
+    .s-digital ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-art-front .tittle-text {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .s-art-front .tittle-text .right p {
+        padding-top: 1rem;
+    }
+
+    .s-art-front .tittle-text .left {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .s-art-front .tittle-text .left p {
+        max-width: 100%;
+        margin-top: .8rem;
+    }
+
+    .s-art-front .tittle-text .right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .s-art-front .all {
+        grid-template-columns: 1fr;
+    }
+
+    .s-art-front .all .card-post:first-child,
+    .s-art-front .all .card-post:nth-child(2) {
+        grid-column: initial;
+    }
+
+    footer .main-area {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    footer .main-area .left {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer .main-area .left img {
+        margin: 0 auto;
+    }
+
+    footer .main-area .right {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media(max-width: 768px) {
     header nav {
         display: none;
     }
+
     header .btn-mobile {
         display: block;
     }
@@ -352,19 +438,24 @@ footer .copy strong {
         max-width: 49rem;
         margin: 0 auto;
     }
-    .s-hero .text h1::before{
+
+    .s-hero .text h1::before {
         left: 0;
         bottom: -.4rem;
         background-size: 100%;
     }
+
     .s-hero .text p {
         max-width: 41rem;
     }
+
     .s-hero .text .arrow {
         max-width: 6rem;
         left: 2rem;
         bottom: 3.7rem;
     }
+
+
 }
 
 /* Celulares */
@@ -372,37 +463,132 @@ footer .copy strong {
     header {
         height: 7.2rem;
     }
+
     header .logo {
         max-width: 16rem;
     }
+
     .s-hero {
         padding-top: 8.8rem;
     }
+
     .s-hero .text h1 {
         font-size: 4rem;
     }
+
     .s-hero .text h1::before {
         bottom: -.6rem;
     }
+
     .s-hero .text p {
         font-size: 1.6rem;
         margin-top: .8rem;
         margin-bottom: 2.4rem;
     }
+
     .s-hero .text .arrow {
         display: none;
     }
+
     .s-hero .ilustra {
         display: none;
     }
+
     .s-hero .ilustra-mobile {
         display: block;
     }
+
     .s-hero::after {
         height: 22rem;
     }
+
+    .s-digital {
+        padding-top: 8rem;
+    }
+
+    .s-digital ul {
+        padding-bottom: 8rem;
+        gap: 6.4rem;
+    }
+
+    .s-digital h3 {
+        font-size: 2.8rem;
+    }
+
+    .s-art-front {
+        padding: 8rem 0;
+    }
+
+    .s-art-front .tittle-text h3 {
+        max-width: 22.7rem;
+        font-size: 2.8rem;
+        margin: 0 auto;
+    }
+
+    .s-art-front .tittle-text p {
+        font-size: 1.6rem;
+    }
+
+    .s-art-front .tittle-text .left p {
+        margin-top: 1.6rem;
+    }
+
+    .s-art-front .all {
+        gap: 3.2rem;
+    }
+
+    .s-newsletter {
+        padding: 8.8rem 0;
+    }
+
+    .s-newsletter h2 {
+        font-size: 4rem;
+    }
+
+    .s-newsletter p {
+        max-width: 31.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    footer .main-area .right {
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+
+    footer .main-area .right .item-nav h6 {
+        text-align: center;
+    }
+
+    footer .main-area .right .item-nav ul li a {
+        justify-content: center;
+    }
+
+    footer .main-area .right .item-nav:last-child {
+        width: 100%;
+    }
+
+    footer .main-area .right .item-nav:last-child ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer .main-area .right .item-nav:last-child ul li:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    footer .main-area {
+        padding-bottom: 4.8rem;
+    }
+
+    footer .copy {
+        text-align: center;
+        font-size: 1.4rem;
+        width: 30rem;
+        margin: 0 auto;
+    }
+
 }
 
 /*=====  End of Respondive  ======*/
-
-

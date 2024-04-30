@@ -1,0 +1,408 @@
+/*=============================================
+=            HEADER           =
+=============================================*/
+
+header .btn-mobile {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.24);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 4rem;
+}
+
+header nav ul li a {
+    color: var(--gray100);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px;
+    transition: color .3s ease;
+}
+
+header nav ul a:hover {
+    color: var(--pink10);
+}
+
+
+/*=====  End of HEADER  ======*/
+
+/*=============================================
+=            Section HERO            =
+=============================================*/
+
+.s-hero {
+    position: relative;
+    width: 100%;
+    padding-top: 11.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.s-hero::after {
+    content: "";
+    width: 100%;
+    height: 22rem;
+    background-color: var(--pink10);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.s-hero .ilustra {
+    padding: 1.5rem;
+}
+
+.s-hero .ilustra-mobile {
+    display: none;
+}
+
+.s-hero .text {
+    position: relative;
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+}
+
+
+.s-hero .text h1 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: -1.68px;
+}
+
+.s-hero .text h1::before {
+    content: "";
+    max-width: 59.9rem;
+    width: 100%;
+    height: 2.2rem;
+    background: url("../img/line-title.svg") no-repeat center center;
+    position: absolute;
+    bottom: -.513rem;
+    left: 3.9rem;
+    z-index: -1;
+}
+
+.s-hero .text p {
+    max-height: 55.6rem;
+    margin: 0 auto;
+    letter-spacing: -0.54px;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    color: var(--gray300);
+}
+
+.s-hero .text .arrow {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 5.5rem;
+}
+
+.s-hero .ilustra {
+    padding: 0 1.5rem;
+}
+
+/*=====  End of Section HERO  ======*/
+
+
+/*=============================================
+=            Section DIGITAL            =
+=============================================*/
+
+.s-digital {
+    padding-top: 12.8rem;
+}
+
+.s-digital h3 {
+    text-align: center;
+    max-width: 53.5rem;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+}
+
+.s-digital ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray800);
+    padding-bottom: 12.8rem;
+}
+
+/*=====  End of Section DIGITAL  ======*/
+
+
+/*=============================================
+=            Section Art S-FRONT            =
+=============================================*/
+
+.s-art-front {
+    padding: 12.8rem 0;
+
+    display: none;
+}
+
+.s-art-front .tittle-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.s-art-front .tittle-text h3 {
+    letter-spacing: -1.2px;
+    font-weight: 600;
+}
+
+.s-art-front .tittle-text p {
+    color: var(--gray600);
+    letter-spacing: -0.54px;
+}
+
+.s-art-front .tittle-text .left {
+    max-width: 53.9rem;
+    width: 100%;
+}
+
+.s-art-front .tittle-text .left p {
+    max-width: 45.2rem;
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+.s-art-front .tittle-text .right {
+    max-width: 42.9rem;
+    width: 100%;
+}
+
+.s-art-front .all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+}
+
+.s-art-front .all .card-post:first-child {
+    grid-column: span 2;
+}
+
+/*=====  End of Section Art S-FRONT  ======*/
+
+
+
+/*=============================================
+=            Section Newslatter            =
+=============================================*/
+
+.s-newsletter {
+    padding: 8.9rem 0;
+    background-color: var(--pink10);
+
+    display: none;
+}
+
+.s-newsletter .container {
+    text-align: center;
+    color: var(--gray100);
+}
+
+.s-newsletter h2 {
+    max-width: 64.6rem;
+    width: 100% ;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+    letter-spacing: -1.44px;
+    font-weight: 600;
+}
+
+.s-newsletter p {
+    max-width: 55.7rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+    letter-spacing: -0.66px;
+}
+
+/*=====  End of Section Newslatter  ======*/
+
+
+/*=============================================
+=            Footer            =
+=============================================*/
+
+footer {
+    padding: 4.8rem 0;
+
+    display: none;
+}
+
+footer .main-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 6.6rem;
+    margin-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+footer .main-area .left {
+    max-width: 27.9rem;
+}
+
+footer .main-area .left p {
+    margin-top: 2.4rem;
+    color: var(--gray600);
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: -.48px;
+}
+
+footer .main-area .right {
+    max-width: 79.2rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .main-area .right .item-nav h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -.48px;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+footer .main-area .right .item-nav ul li:not(:last-child){
+    margin-bottom: 3.2rem;
+}
+
+footer .main-area .right .item-nav ul li a {
+    color: var(--gray600);
+    font-size: 1.6rem;
+    letter-spacing: -.48px;
+    transition: color .3s ease;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+footer .main-area .right .item-nav ul li a:hover{
+    color: var(--pink10);
+}
+
+footer .copy {
+    color: var(--gray600);
+    letter-spacing: -.48px;
+}
+
+footer .copy strong {
+    font-weight: 600;
+}
+
+/*=====  End of Footer  ======*/
+
+
+
+/*=============================================
+=            Respondive            =
+=============================================*/
+/* Monitor pequeno */
+@media(max-width: 1200px) {
+
+}
+
+/* Tablet */
+@media(max-width: 991px) {
+    .s-hero::after{
+        height: 13rem;
+    } 
+}
+
+@media(max-width: 768px) {
+    header nav {
+        display: none;
+    }
+    header .btn-mobile {
+        display: block;
+    }
+
+    .s-hero .text h1 {
+        max-width: 49rem;
+        margin: 0 auto;
+    }
+    .s-hero .text h1::before{
+        left: 0;
+        bottom: -.4rem;
+        background-size: 100%;
+    }
+    .s-hero .text p {
+        max-width: 41rem;
+    }
+    .s-hero .text .arrow {
+        max-width: 6rem;
+        left: 2rem;
+        bottom: 3.7rem;
+    }
+}
+
+/* Celulares */
+@media(max-width : 560px) {
+    header {
+        height: 7.2rem;
+    }
+    header .logo {
+        max-width: 16rem;
+    }
+    .s-hero {
+        padding-top: 8.8rem;
+    }
+    .s-hero .text h1 {
+        font-size: 4rem;
+    }
+    .s-hero .text h1::before {
+        bottom: -.6rem;
+    }
+    .s-hero .text p {
+        font-size: 1.6rem;
+        margin-top: .8rem;
+        margin-bottom: 2.4rem;
+    }
+    .s-hero .text .arrow {
+        display: none;
+    }
+    .s-hero .ilustra {
+        display: none;
+    }
+    .s-hero .ilustra-mobile {
+        display: block;
+    }
+    .s-hero::after {
+        height: 22rem;
+    }
+}
+
+/*=====  End of Respondive  ======*/
+
+
